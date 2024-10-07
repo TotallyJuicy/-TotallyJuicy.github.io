@@ -1,0 +1,134 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F0; /* Light Sage Green */
+    color: #2E4A3E; /* Darker Sage Green for Text */
+}
+
+header {
+    background-color: #A3B8A5; /* Sage Green */
+    font-family: Impact, sans-serif;
+    text-align: center;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #2E4A3E; /* Dark Sage Green */
+}
+.dive-in {
+    font-size: 5rem; /* Make it significantly larger */
+    color: #3E3E3E; /* Darker text color for better visibility */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: color 0.3s ease; /* Transition effects */
+    margin-top: 10px; /* Spacing above the text */
+    height: auto; /* Remove fixed height */
+    width: auto; /* Remove fixed width */
+    text-align: center; /* Center the text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional: add text shadow for better visibility */
+}
+
+.dive-in:hover {
+    animation: bob 1s infinite; /* Bob animation on hover */
+}
+
+@keyframes bob {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); } /* Move up */
+    100% { transform: translateY(0); } /* Back to original */
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F4F4F0; /* Light Text on Dark Background */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #2E4A3E; /* Dark Text on Hover */
+}
+
+nav ul li b {
+    text-decoration: none;
+    color: #F4F4F0; /* Light Text on Dark Background */
+    font-weight: bold;
+}
+
+nav ul li b:hover {
+    color: #2E4A3E; /* Dark Text on Hover */
+}
+
+main {
+    padding: 2rem;
+    
+    text-align: left;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #2E4A3E;
+}
+
+.about-image {
+    width: 400px; /* Set the width of the images */
+    height: 300px; /* Set the height of the images */
+    object-fit: cover; /* Ensures the image covers the set dimensions without stretching */
+    border-radius: 8px; /* Optional: rounded corners */
+    border: 2px solid #3E3E3E; /* Add a solid border */
+    transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+.about-image:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+ 
+
+footer {
+    background-color: #A3B8A5; /* Sage Green Footer */
+    text-align: center;
+    padding: 1rem;
+    color: #F4F4F0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out left and right content */
+    align-items: center; /* Vertically center items */
+}
+
+.footer-left {
+    flex: 0; /* Allow the left section to grow */
+    text-align: left; /* Align left */
+}
+
+.footer-right {
+    flex: 1; /* Allow the right section to grow */
+    text-align: right; /* Align right */
+}
+
+.footer-right p {
+    font-size: 0.8rem; /* Make copyright notice smaller */
+    color: #f8d3c5;
+    margin: 0; /* Remove default margin */
+}
